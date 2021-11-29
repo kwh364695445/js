@@ -6,30 +6,23 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<style>
+		.box {
+			width: 100px;
+			height: 100px;
+			background-color: #bfc;
+		}
+	</style>
 </head>
+
 <body>
-	<script>
-let myCar = {brand1: '本次', brand2: 'baoma'};
-console.log(myCar);
-Object.defineProperties(myCar, {
-	'brand1':{
-		configurable: true,
-		enumerable: true,
-		writable: true,
-		value: '奔驰'
-	},
-	'brand3': {
-		configurable: false,
-		enumerable: false,
-		get(){return '宝马'},
-		set(value){this.brand1 = value}
-	}
-})
-console.log(myCar);
-myCar.brand3 = '我是宝马';
-console.log(myCar);
-console.log(myCar.brand3);
-	</script>
+	<div class="box"></div>
+<script>
+	Array.prototype.arrCustom = function() {};
+	let a = [1, 2, 3];
+	console.log(a);
+</script>
+
 </body>
 
 </html>
